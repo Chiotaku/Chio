@@ -1,4 +1,3 @@
-// When true, moving the mouse draws on the canvas
 let isDrawing = false;
 let x = 0;
 let y = 0;
@@ -6,9 +5,7 @@ let y = 0;
 const myPics = document.getElementById('canvas_cito');
 const context = myPics.getContext('2d');
 
-// event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
-
-// Add the event listeners for mousedown, mousemove, and mouseup
+//comando del mouse
 myPics.addEventListener('mousedown', e => {
   x = e.offsetX;
   y = e.offsetY;
